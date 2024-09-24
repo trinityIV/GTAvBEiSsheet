@@ -7,10 +7,10 @@
 	initial-value: 0%;
 }
 body {
-	padding: 0;
-	margin: 0;
+	padding: 2%;
+	margin: 0%;
 	min-height: 100vh;
-	display: grid;
+	display:grid;
 	place-items: center;
 	font-family: "Chakra Petch", sans-serif;
 	overflow: hidden;
@@ -37,7 +37,7 @@ span {
 	width: calc(100% / 5);
 	aspect-ratio: 1;
 	display: inherit;
-	align-items: inherit;
+	align-items: center;
 	justify-content: inherit;
 	transform: rotateX(-52deg);
 	filter: drop-shadow(0 3px 20px #fff)
@@ -73,6 +73,12 @@ span {
 		}
 	}
 }
+h1{
+		font-size: 4em;
+		color: #000000;
+		animation: glow 2.2s infinite alternate;
+}
+
 
 @keyframes wave {
 	0% {
@@ -86,15 +92,28 @@ span {
 	}
 }
 @keyframes light {
-	0% {
-		--M: 0%;
+	45% {
+		--M: 20%;
 		opacity: 1;
 	}
-	99% {
-		--M: 100%;
-	}
-	100% {
-		opacity: 0;
+	85% {
+		opacity: 2;
 		--m: 0%;
+	}
+	100%{
+		opacity: 5;
+		--m:0%;
+	}
+}
+@keyframes glow {
+    50% {
+        text-shadow: 0 0 2px #00bfff, 0 0 3px #00bfff, 0 0 7px #00bfff, 0 0 10px #00bfff, 0 0 12px #00bfff, 0 0 5px #00bfff, 0 0 7px #00bfff;
+    }
+    75% {
+        text-shadow: 0 0 2px #1e90ff, 0 0 3px #1e90ff, 0 0 7px #1e90ff, 0 0 10px #1e90ff, 0 0 20px #1e90ff, 0 0 5px #1e90ff, 0 0 7px #1e90ff;
+    }
+	100%{
+		text-shadow: 0 0 10px #095169, 0 0 3px #095169, 0 0 7px #095169, 0 0 10px #095169, 0 0 12px #095169, 0 0 5px #095169, 0 0 7px #095169;
+
 	}
 }
