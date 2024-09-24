@@ -7,19 +7,21 @@
 
 }
 
-a {
+.ab {
 	position: relative;
 	padding: 30px 60px;
 	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
-	color: #999;
+	color: #000000;
 	text-decoration: none;
 	text-transform: uppercase;
 	letter-spacing: 4px;
 	font: 700 30px consolas;
 	overflow: hidden;
+	animation: glow 3.8s infinite alternate;
 }
 
-a span:nth-child(1) {
+
+.ab span:nth-child(1) {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -38,7 +40,7 @@ a span:nth-child(1) {
 	}
 }
 
-a span:nth-child(2) {
+.ab span:nth-child(2) {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -57,7 +59,7 @@ a span:nth-child(2) {
 	}
 }
 
-a span:nth-child(3) {
+.ab span:nth-child(3) {
 	position: absolute;
 	bottom: 0;
 	right: 0;
@@ -76,7 +78,7 @@ a span:nth-child(3) {
 	}
 }
 
-a span:nth-child(4) {
+.ab span:nth-child(4) {
 	position: absolute;
 	top: 0;
 	left: 0;
